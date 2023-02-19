@@ -1,0 +1,1 @@
+A repository to try out [release-please](https://github.com/googleapis/release-please).
