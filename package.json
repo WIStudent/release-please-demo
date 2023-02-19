@@ -1,0 +1,19 @@
+{
+  "name": "@wistudent/release-please-demo",
+  "version": "1.0.0",
+  "description": "Trying out release please",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WIStudent/release-please-demo.git"
+  },
+  "author": "Tobias Trumm",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WIStudent/release-please-demo/issues"
+  },
+  "homepage": "https://github.com/WIStudent/release-please-demo#readme"
+}
