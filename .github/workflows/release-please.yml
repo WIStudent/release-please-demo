@@ -12,11 +12,10 @@ jobs:
       contents: write
       pull-requests: write
     steps:
+      - uses: actions/checkout@4
+
       - uses: googleapis/release-please-action@v4
         id: release-please
-        with:
-          release-type: node
 
       - run: echo "release-please created a release ${{ steps.release-please.outputs.major }}.${{ steps.release-please.outputs.minor }}.${{ steps.release-please.outputs.patch }}"
         if: ${{ steps.release-please.outputs.release_created }}
-  
