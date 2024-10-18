@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.1.0](https://github.com/WIStudent/release-please-demo/compare/v1.0.0...v1.1.0) (2024-10-18)
+
+
+### Features
+
+* Update release-please and add dependabot ([b44fc28](https://github.com/WIStudent/release-please-demo/commit/b44fc2864ef2c80a4073d43f4377518eceadf3b4))
+
+
+### Bug Fixes
+
+* Fix something again ([c82011c](https://github.com/WIStudent/release-please-demo/commit/c82011cfb5e3d0bccc3c93497862d9072e19cabc))
+
 ## 1.0.0 (2023-02-19)
 
 
