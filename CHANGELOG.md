@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.1.1](https://github.com/WIStudent/release-please-demo/compare/v1.1.0...v1.1.1) (2024-10-18)
+
+
+### Bug Fixes
+
+* Some fix (no real change) ([7da8f8f](https://github.com/WIStudent/release-please-demo/commit/7da8f8f48198d52edd09abfdb9851f2c8b085426))
+
+
+### Dependencies
+
+* **deps-dev:** Bump typescript from 5.5.4 to 5.6.3 ([d64d61a](https://github.com/WIStudent/release-please-demo/commit/d64d61af674f60f27f310e9a7ba24a1da2e50719))
+* **deps-dev:** Downgrade typescript to 5.5 ([cfb17c1](https://github.com/WIStudent/release-please-demo/commit/cfb17c1dbe52d44ab65fe37eae67fc2f88364d00))
+* **deps:** Bump semver from 7.5.4 to 7.6.3 ([baec638](https://github.com/WIStudent/release-please-demo/commit/baec638dc9f329da7521fd3ba354b2df37d46ce0))
+* **deps:** Downgrade semver to 7.5 ([4bde709](https://github.com/WIStudent/release-please-demo/commit/4bde7097fc1012beabe99e2e38a07e7c7f5be8b7))
+
 ## [1.1.0](https://github.com/WIStudent/release-please-demo/compare/v1.0.0...v1.1.0) (2024-10-18)
 
 
