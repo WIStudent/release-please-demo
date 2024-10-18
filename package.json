@@ -20,6 +20,6 @@
     "typescript": "5.5"
   },
   "dependencies": {
-    "semver": "7.5"
+    "semver": "7.6"
   }
 }
