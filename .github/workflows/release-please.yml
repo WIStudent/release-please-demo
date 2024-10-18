@@ -12,11 +12,10 @@ jobs:
       contents: write
       pull-requests: write
     steps:
-      - uses: google-github-actions/release-please-action@v3
+      - uses: googleapis/release-please-action@v4
         id: release-please
         with:
           release-type: node
-          package-name: "@wistudent/release-please-demo"
 
       - run: echo "release-please created a release ${{ steps.release-please.outputs.major }}.${{ steps.release-please.outputs.minor }}.${{ steps.release-please.outputs.patch }}"
         if: ${{ steps.release-please.outputs.release_created }}

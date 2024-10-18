@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/WIStudent/release-please-demo/issues"
   },
-  "homepage": "https://github.com/WIStudent/release-please-demo#readme"
+  "homepage": "https://github.com/WIStudent/release-please-demo#readme",
+  "devDependencies": {
+    "typescript": "5.5"
+  },
+  "dependencies": {
+    "semver": "7.5"
+  }
 }
