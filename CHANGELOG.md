@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/WIStudent/release-please-demo/compare/v1.1.1...v1.1.2) (2025-03-06)
+
+
+### Bug Fixes
+
+* Bump version number ([88d798f](https://github.com/WIStudent/release-please-demo/commit/88d798f952fa6c81c8e3089851a7285be5965d0d))
+
 ## [1.1.1](https://github.com/WIStudent/release-please-demo/compare/v1.1.0...v1.1.1) (2024-10-18)
 
 
