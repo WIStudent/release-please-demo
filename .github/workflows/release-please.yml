@@ -19,13 +19,3 @@ jobs:
 
       - run: echo "release-please created a release ${{ steps.release-please.outputs.major }}.${{ steps.release-please.outputs.minor }}.${{ steps.release-please.outputs.patch }}"
         if: ${{ steps.release-please.outputs.release_created }}
-
-      - run: exit 0
-        if: ${{ steps.release-please.outputs.release_created }}
-      
-      - run: gh release delete "$TAG" --cleanup-tag --yes --repo "$REPOSITORY"
-        if: ${{ steps.release-please.outputs.release_created && failure() }}
-        env:
-          TAG: ${{ steps.release-please.outputs.tag_name }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          REPOSITORY: ${{ github.repository }}
