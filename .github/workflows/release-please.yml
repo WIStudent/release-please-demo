@@ -16,15 +16,6 @@ jobs:
 
       - uses: googleapis/release-please-action@v4
         id: release-please
-        with:
-          skip-github-release: true
 
       - run: echo "release-please created a release ${{ steps.release-please.outputs.major }}.${{ steps.release-please.outputs.minor }}.${{ steps.release-please.outputs.patch }}"
         if: ${{ steps.release-please.outputs.release_created }}
-
-      - run: exit 1
-        if: ${{ steps.release-please.outputs.release_created }}
-
-      - uses: googleapis/release-please-action@v4
-        with:
-          skip-github-pull-request: true
