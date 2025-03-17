@@ -1,6 +1,7 @@
 
 {
   "release-type": "node",
+  "separate-pull-requests": true,
   "changelog-sections": [
     { "type": "feat", "section": "Features" },
     { "type": "feature", "section": "Features" },
