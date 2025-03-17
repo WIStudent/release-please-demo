@@ -1,6 +1,5 @@
 
 {
-  "include-component-in-tag": false,
   "release-type": "node",
   "changelog-sections": [
     { "type": "feat", "section": "Features" },
@@ -18,6 +17,10 @@
     { "type": "ci", "section": "Continuous Integration", "hidden": true }
   ],
   "packages": {
-    ".": {}
+    "single-package": {
+      "include-component-in-tag": false
+    },
+    "second-package": {},
+    "npm-workspace": {}
   }
 }
