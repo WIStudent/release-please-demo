@@ -19,5 +19,5 @@ jobs:
 
       - run: echo "$OUTPUT"
         env:
-          OUTPUT: ${{ steps.release-please.outputs }}
+          OUTPUT: ${{ toJSON(steps.release-please.outputs) }}
 
