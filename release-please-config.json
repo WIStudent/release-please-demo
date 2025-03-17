@@ -2,6 +2,7 @@
 {
   "release-type": "node",
   "separate-pull-requests": true,
+  "bootstrap-sha": "d9f34935a43f6ddc40df7dcab53a93422c4624d4",
   "changelog-sections": [
     { "type": "feat", "section": "Features" },
     { "type": "feature", "section": "Features" },
