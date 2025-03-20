@@ -23,6 +23,9 @@
       "include-component-in-tag": false
     },
     "second-package": {},
-    "npm-workspace": {}
+    "npm-workspace": {},
+    "maven-project": {
+      "release-type": "maven"
+    }
   }
 }
