@@ -1,0 +1,38 @@
+name: release-please npm-workspace lerna update
+
+on:
+  push:
+    branches:
+      - release-please--branches--main--components--release-please-demo-workspace
+
+jobs:
+  increase-version:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: '.nvmrc'
+          cache: 'npm'
+          cache-dependency-path: 'npm-workspaces/package-lock.json'
+
+      - id: version
+        working-directory: npm-workspace
+        run: |
+          version=$(jq '.version' -r  package.json)
+          echo "version=$version" >> GITHUB_OUTPUT
+
+      - working-directory: npm-workspace
+        run: |
+          npx lerna version $VERSION --yes --no-push --message="chore(release): Update versions with lerna [skip ci]"
+        env:
+          VERSION: ${{ steps.version.outputs.version }}
+
+      - run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git push origin release-please--branches--main--components--release-please-demo-workspace
