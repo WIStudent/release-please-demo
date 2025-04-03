@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.3](https://github.com/WIStudent/release-please-demo/compare/release-please-demo-workspace-v1.1.2...release-please-demo-workspace-v1.1.3) (2025-04-03)
+
+
+### Bug Fixes
+
+* **workspace-a:** Fix something ([e61dd74](https://github.com/WIStudent/release-please-demo/commit/e61dd743be2460eac038846b84d60768070fe744))
+
 ## [1.1.2](https://github.com/WIStudent/release-please-demo/compare/release-please-demo-workspace-v1.1.1...release-please-demo-workspace-v1.1.2) (2025-04-03)
 
 
