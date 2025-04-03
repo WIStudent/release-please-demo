@@ -29,6 +29,10 @@ jobs:
           version=$(jq '.version' -r  package.json)
           echo "version=$version" >> $GITHUB_OUTPUT
 
+      - run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
       - working-directory: npm-workspace
         run: |
           npx lerna version $VERSION --yes --no-push --message="chore(release): Update versions with lerna [skip ci]"
@@ -36,6 +40,4 @@ jobs:
           VERSION: ${{ steps.version.outputs.version }}
 
       - run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
           git push origin release-please--branches--main--components--release-please-demo-workspace
