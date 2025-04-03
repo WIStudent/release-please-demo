@@ -7,6 +7,8 @@ on:
 
 jobs:
   release-please:
+    outputs:
+      release-please: ${{ toJSON(steps.release-please.outputs) }}
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -23,3 +25,22 @@ jobs:
         env:
           OUTPUT: ${{ toJSON(steps.release-please.outputs) }}
 
+  release-npm-workspace:
+    needs:
+      - release-please
+    if: ${{ fromJSON(needs.release-please.outputs.release-please).npm-workspace--release_created == 'true' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: '.nvmrc'
+          cache: 'npm'
+          cache-dependency-path: 'npm-workspace/package-lock.json'
+
+      - working-directory: npm-workspace
+        run: npm ci
+
+      - working-directory: npm-workspace
+        run: npx lerna publish from-git --tag-version-prefix="release-please-demo-workspace-v"
