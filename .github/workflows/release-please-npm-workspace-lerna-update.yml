@@ -18,7 +18,7 @@ jobs:
         with:
           node-version-file: '.nvmrc'
           cache: 'npm'
-          cache-dependency-path: 'npm-workspaces/package-lock.json'
+          cache-dependency-path: 'npm-workspace/package-lock.json'
 
       - id: version
         working-directory: npm-workspace
