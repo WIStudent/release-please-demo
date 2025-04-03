@@ -20,11 +20,14 @@ jobs:
           cache: 'npm'
           cache-dependency-path: 'npm-workspace/package-lock.json'
 
+      - working-directory: npm-workspace
+        run: npm ci
+
       - id: version
         working-directory: npm-workspace
         run: |
           version=$(jq '.version' -r  package.json)
-          echo "version=$version" >> GITHUB_OUTPUT
+          echo "version=$version" >> $GITHUB_OUTPUT
 
       - working-directory: npm-workspace
         run: |
