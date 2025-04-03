@@ -35,7 +35,7 @@ jobs:
 
       - working-directory: npm-workspace
         run: |
-          npx lerna version $VERSION --yes --no-push --message="chore(release): Update versions with lerna [skip ci]"
+          npx lerna version $VERSION --yes --no-push --message="chore(main): Update versions with lerna"
         env:
           VERSION: ${{ steps.version.outputs.version }}
 
