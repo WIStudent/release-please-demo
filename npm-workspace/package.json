@@ -11,5 +11,8 @@
   "workspaces": [
     "packages/a",
     "packages/b"
-  ]
+  ],
+  "dependencies": {
+    "lerna": "^8.2.1"
+  }
 }
