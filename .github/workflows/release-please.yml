@@ -16,6 +16,8 @@ jobs:
 
       - uses: googleapis/release-please-action@v4
         id: release-please
+        with:
+          token: ${{ secrets.RELEASE_PLEASE_PAT }}
 
       - run: echo "$OUTPUT"
         env:
