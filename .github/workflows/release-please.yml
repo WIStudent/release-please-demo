@@ -43,4 +43,4 @@ jobs:
         run: npm ci
 
       - working-directory: npm-workspace
-        run: npx lerna publish from-git --tag-version-prefix="release-please-demo-workspace-v"
+        run: npx lerna publish from-package
