@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/WIStudent/release-please-demo#readme",
   "devDependencies": {
-    "typescript": "5.6"
+    "typescript": "5.9"
   },
   "dependencies": {
     "semver": "7.6"
