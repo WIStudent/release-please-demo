@@ -25,7 +25,8 @@
     "second-package": {},
     "npm-workspace": {},
     "maven-project": {
-      "release-type": "maven"
+      "release-type": "maven",
+      "skip-snapshot": true
     }
   }
 }
