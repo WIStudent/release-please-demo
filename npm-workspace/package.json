@@ -13,6 +13,6 @@
     "packages/b"
   ],
   "dependencies": {
-    "lerna": "^8.2.1"
+    "lerna": "^9.0.1"
   }
 }
